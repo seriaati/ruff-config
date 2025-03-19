@@ -47,6 +47,8 @@ ignore = [
     "PLR6301", # Method could be a function, class method, or static method
     "ANN401",  # typing.Any used
     "DTZ007",  # Naive datetime constructed
+    "E501",    # Line too long
+    "S311",    # Standard pseudo-random generators are not suitable for security/cryptographic purposes
 ]
 
 [lint.per-file-ignores]
