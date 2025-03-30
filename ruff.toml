@@ -53,6 +53,7 @@ ignore = [
 
 [lint.per-file-ignores]
 "**/__init__.py" = ["F403", "F401"] # Wildcard imports used
+"test.py" = ["ALL"]
 
 [lint.flake8-type-checking]
 quote-annotations = true
