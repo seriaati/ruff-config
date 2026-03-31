@@ -51,11 +51,13 @@ ignore = [
     "E501",    # Line too long
     "S311",    # Standard pseudo-random generators are not suitable for security/cryptographic purposes
     "ANN003",  # Missing type annotation for kwargs
+    "RUF001",  # Use of ambiguous Unicode characters
 ]
 
 [lint.per-file-ignores]
 "**/__init__.py" = ["F403", "F401"] # Wildcard imports used
 "test.py" = ["ALL"]
+"migrations/**.py" = ["ALL"]
 
 [lint.flake8-type-checking]
 runtime-evaluated-base-classes = [
